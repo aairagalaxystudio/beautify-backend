@@ -1,0 +1,10 @@
+beautify-backend/
+│
+├── server.js
+├── db.js
+├── package.json
+├── .env (local only)
+│
+└── routes/
+    ├── products.js
+    └── orders.js
