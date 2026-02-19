@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-// Static luxury products
 router.get("/", (req, res) => {
   res.json([
     {
@@ -12,14 +11,8 @@ router.get("/", (req, res) => {
     },
     {
       id: 2,
-      name: "Pink Diamond Gloss",
-      price: 1799,
-      image: "https://via.placeholder.com/300"
-    },
-    {
-      id: 3,
-      name: "Midnight Black Luxury",
-      price: 1999,
+      name: "French Classic",
+      price: 1299,
       image: "https://via.placeholder.com/300"
     }
   ]);
