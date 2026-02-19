@@ -6,12 +6,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// TEST ROUTE
+// ✅ ROOT ROUTE (THIS FIXES NOT FOUND)
 app.get("/", (req, res) => {
-  res.send("Beautify by Mansi Backend Running");
+  res.status(200).send("Beautify Backend Running Successfully 🚀");
 });
 
-// PRODUCTS ROUTE
+// ✅ PRODUCTS API
 app.get("/api/products", (req, res) => {
   res.json([
     {
@@ -29,8 +29,8 @@ app.get("/api/products", (req, res) => {
   ]);
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
-  console.log("Server running on port", PORT);
+  console.log(`Server running on port ${PORT}`);
 });
